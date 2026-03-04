@@ -12,17 +12,7 @@ export const Task2 = () => {
       </header>
 
       <div className="">
-        <aside className={`bg-violet-200  ${isOpen ? 'w-75' : 'w-0'}`}>
-          <div className="p-4 flex flex-col gap-1">
-            <button className={BUTTON_BASE} onClick={() => setIsOpen(false)}>
-              Close
-            </button>
-            <div className={NAV_ITEM_BASE}>Dashboard</div>
-            <div className={NAV_ITEM_BASE}>Profile</div>
-            <div className={NAV_ITEM_BASE}>Settings</div>
-            <div className={NAV_ITEM_BASE}>Logout</div>
-          </div>
-        </aside>
+        <aside className={`bg-violet-200  ${isOpen ? 'w-75' : 'w-0'}`}>Aside</aside>
 
         <main className={``}>
           <header className="p-4 bg-sky-200 h-16 ">
