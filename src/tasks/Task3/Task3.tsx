@@ -1,5 +1,14 @@
 /*eslint no-console: 0*/
 /*eslint @typescript-eslint/no-unused-vars: 0*/
+
+/**
+ * Task 3.1 —Tree
+ *
+ * TODO: Implement `getAllItems` to collect all `IItem` nodes from a `TTree`.
+ *  - A node is an IItem if its id === 'single'
+ *  - A node is an IGroup if its id === 'group'
+ *  - Do NOT change the types or the Tree data structure.
+ */
 //===================================== Task 3.1====================================================
 import { useState } from 'react'
 
@@ -48,6 +57,11 @@ export const Task3 = () => {
     </div>
   )
 }
+/**
+ * Task 3.2 — Fix TypeScript errors
+ *
+ * TODO: The code below has TypeScript errors. Fix them without changing the runtime behavior.
+ */
 //===================================== Task 3.2 fix errors=========================================
 enum TestEnum {
   A = 'A',
@@ -60,10 +74,16 @@ interface ITest2 {
 }
 
 const data: ITest2[] = [
-  { id: TestEnum['A'], name: 'a' },
-  { id: TestEnum['B'], name: 'b' },
+  { id: 'A', name: 'a' },
+  { id: 'B', name: 'b' },
 ]
 console.log(data)
+/**
+ * Task 3.3 — Implement a generic utility type
+ *
+ * TODO: Write the `ArrayElement<` utility type that extracts the element type from an array type.
+ *  Example: ArrayElement<string[]> → string
+ */
 //===================================== Task 3.3 fix errors=========================================
 type TTest3_1 = string[]
 type TTest3_2 = number[]
@@ -71,7 +91,7 @@ type TTest3_3 = Record<string, string>[]
 
 //todo: Write the type returned the array element
 
-type ArrayElement<T> = T extends (infer U)[] ? U : never
+type ArrayElement<T> = unknown
 
 const result1: ArrayElement<TTest3_1> = 'tests'
 const result2: ArrayElement<TTest3_2> = 1

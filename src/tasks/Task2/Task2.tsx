@@ -1,3 +1,13 @@
+/**
+ * Task: Implement a responsive aside + main layout with open/close toggle.
+ *
+ * TODO:
+ *  Your task is to fix the layout so that:
+ *  1. The <aside> is exactly 300px wide
+ *  2. The <main> always fills the remaining horizontal space
+ *  3. Inside <main>: <header> and <footer> are fixed at 64px, the content area in between scrolls.
+ *  5. Do NOT change the markup structure.
+ */
 export const Task2 = () => {
   return (
     <div className="w-full h-screen">

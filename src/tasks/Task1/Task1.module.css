@@ -1,7 +1,4 @@
 .approach1Parent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   /* TODO: center the child using Flexbox */
 }
 
