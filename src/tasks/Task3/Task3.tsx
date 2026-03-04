@@ -60,8 +60,8 @@ interface ITest2 {
 }
 
 const data: ITest2[] = [
-  { id: 'A', name: 'a' },
-  { id: 'B', name: 'b' },
+  { id: TestEnum['A'], name: 'a' },
+  { id: TestEnum['B'], name: 'b' },
 ]
 console.log(data)
 //===================================== Task 3.3 fix errors=========================================
@@ -71,7 +71,7 @@ type TTest3_3 = Record<string, string>[]
 
 //todo: Write the type returned the array element
 
-type ArrayElement<T> = string
+type ArrayElement<T> = T extends (infer U)[] ? U : never
 
 const result1: ArrayElement<TTest3_1> = 'tests'
 const result2: ArrayElement<TTest3_2> = 1
