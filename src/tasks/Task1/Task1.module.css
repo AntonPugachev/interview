@@ -1,0 +1,45 @@
+.approach1Parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /* TODO: center the child using Flexbox */
+}
+
+.approach1Child {
+}
+
+/* ─────────────────────────────────────── */
+
+.approach2Parent {
+  /* TODO: center the child using CSS Grid */
+}
+
+.approach2Child {
+}
+
+/* ─────────────────────────────────────── */
+
+.approach3Parent {
+  /* TODO: center the child using position: absolute */
+}
+
+.approach3Child {
+}
+
+/* ─────────────────────────────────────── */
+
+.approach4Parent {
+  /* TODO: center the child using margin: auto */
+}
+
+.approach4Child {
+}
+
+/* ─────────────────────────────────────── */
+
+.approach5Parent {
+  /* TODO: bonus — your choice */
+}
+
+.approach5Child {
+}
